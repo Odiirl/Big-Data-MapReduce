@@ -1,14 +1,7 @@
 import csv
 
 def count_total_common_lyrics(file_path, common_lyrics_list):
-    """
-    Scans through song lyrics in a CSV file and counts the total
-    occurrences of each common lyric across all songs.
-
-    Args:
-        file_path (str): The path to the CSV file containing song lyrics.
-        common_lyrics_list (list): A list of common lyrical phrases to search for.
-    """
+    
     # Initialize a dictionary to store the counts for each common lyric
     common_lyrics_counts = {lyric: 0 for lyric in common_lyrics_list}
 
@@ -65,4 +58,5 @@ user_common_lyrics = [
 file_path = 'tcc_ceds_music.csv'
 
 # Call the function to perform the task
+
 count_total_common_lyrics(file_path, user_common_lyrics)
